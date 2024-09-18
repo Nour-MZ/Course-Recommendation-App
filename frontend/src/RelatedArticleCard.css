@@ -1,0 +1,76 @@
+.related-articles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.related-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    position:relative;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    text-decoration: none;
+    text-decoration-style: none;
+    color: black;
+    font-size: 0.8rem;
+
+     }
+     .related-card-info-container{
+        padding: 0.55rem;
+        padding-left: 0.8rem;
+        flex-shrink: 10000;
+    }
+
+    .related-card h3 {
+        padding-bottom: 0rem;
+        margin: 0;
+        font-size: 0.7rem;
+        
+    }
+    .card h4{
+        margin-top: 0.3rem;
+        margin-bottom: 0.7rem;
+        font-size: 0.65rem;
+        color: var(--gray);
+    }
+    .related-card-image-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+        overflow: hidden;
+    }
+    .related-card-image-container img{
+        width: 100%;
+    height: 140%;
+    object-fit: cover;
+    }
+.related-playbutton{
+ 
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    height: 2.3rem;
+    width: 2.3rem;
+    position: absolute;
+    top: 1.3rem;
+    left: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.related-duration-number{
+    margin-top: 0.3rem;
+    font-size: 0.65rem;
+}
+.related-playbutton> img{
+    width: 30%;
+    height: 2rem;
+}

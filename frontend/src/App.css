@@ -1,0 +1,69 @@
+
+  :root {
+    
+    --font-family: 'Arial', sans-serif;
+    --font-size: 16px;
+    --gray: rgb(83, 82, 82);
+    --primary: rgb(52,116,239);
+}
+
+.padder{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  display: flex; 
+}
+
+.main-content {
+  margin-left: 250px; 
+  background-color: #F9FAFC;
+  width: calc(100% - 250px); 
+  min-height: 100vh; 
+ 
+}
+
+
+.all-articles{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.list-header{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-header a{
+  font-size: 0.8rem;
+  padding:0.5rem 1rem 0.5rem 1rem;
+  border: 1px solid var(--gray);
+  background-color: white;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+
+}
+.list-header a:hover{
+  background-color: rgb(207 216 234);
+}
+.list-header h2{
+  display: flex;
+  justify-content: start;
+  font-size: 1rem;
+  color: #474747;
+  font-weight: 500;
+}

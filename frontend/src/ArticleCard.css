@@ -1,0 +1,172 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    position:relative;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    text-decoration: none;
+    text-decoration-style: none;
+    color: black;
+    font-size: 0.8rem;
+    background-color: white;
+     }
+.card-info-container{
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    flex-shrink: 1000;
+}
+.card:hover {
+    /* transform: scale(1.05); */
+}
+.course-level{
+    position: absolute;
+    right: 1.5rem;
+    top: 0.5rem;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    background-color: gray;
+    border-radius: 1rem;
+}
+.playbutton{
+ 
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 50%;
+        height: 3.5rem;
+      
+        width: 3.5rem;
+        position: absolute;
+        top: 4rem;
+        left: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(2px);
+
+}
+
+.playbutton> img{
+    width: 100%;
+    height: 1.4rem;
+    filter: blur(none);
+}
+
+.card-image-container {
+    padding: .8rem;
+    width: 12rem;
+    height: 8rem;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-image-container > img {
+    width: 100%;
+    height: 160%;
+    /* height: auto; */
+    border-radius: 8px;
+    object-fit: cover;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+  
+    .card h3 {
+        padding-bottom: 0rem;
+        margin-bottom: 0;
+        font-size: 0.8rem;
+        margin: 0;
+        margin-top: .5rem;
+        
+    }
+    .card h4{
+        margin-top: 0.3rem;
+        margin-bottom: 0.7rem;
+        font-size: 0.65rem;
+        color: var(--gray);
+    }
+ 
+    .author-card{
+        color: var(--primary)
+    }
+
+.duration-read-div{
+    display: flex;
+    color: var(--gray);
+}
+.duration-read-div > *{
+    display: flex;
+    align-items: center;
+}
+.duration-icon{
+    display: flex;
+    align-items: center;
+    margin-right: 0.3rem;
+}
+.duration-icon > img{
+    width: 0.8rem;
+    height: 0.8rem;
+    
+}
+
+.read-div{
+    padding-left: 1rem;
+}
+.duration-number{
+    font-size:0.6rem;
+}
+.read-number{
+    font-size:0.6rem;
+}
+.card p {
+    display: flex;
+    width: 100%;
+  
+    padding-right: 3rem;
+    font-size: 0.8em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--gray);
+    line-height: 1rem;
+    -webkit-line-clamp: 3; 
+    text-overflow: ellipsis; 
+  }
+  
+  .tag {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+  }
+
+
+
+.course-level.Intermediate{
+    color: #e3b96b;
+    background-color: #fceee0
+}
+
+.course-level.Introductory{
+    background-color: #e0feec;
+    color: #6dbd72;
+}
+.course-level.Advanced{
+    background-color: #fee0e0;
+    color: #ff8282;
+}
+
+
+
+
+
+.All-Articles{
+  padding-right: 50px;
+  list-style-type:none;
+  list-style: none;
+  color: blue;
+}

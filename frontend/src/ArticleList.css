@@ -1,0 +1,24 @@
+.article-list {
+    margin-top: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    /* justify-content: space-between; */
+  }
+
+  
+  .viewed-articles-div{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+
+  
+  
+  
