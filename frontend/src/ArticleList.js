@@ -42,6 +42,20 @@ const ArticleList = () => {
 
     return (
         <>
+           
+            {articles && articles.length > 0 ?
+            <div className="article-list">
+                <div className="list-header">
+                    <h2>Courses you may like</h2>
+
+                </div>
+                <div className="related-articles">
+                    {articles.map(article => (
+                        <ViewedArticleCard key={article.id} article={article} /> 
+                    ))}
+                </div>
+            </div>
+            : ""}
             <div className="viewed-block" style={{ display: viewedArticles.length > 0 ? 'block' : 'none' }}>
                 <div className="list-header padder " style={{ display: viewedArticles.length > 0 ? 'flex' : 'none' }}>
                     <h2>Courses You Viewed</h2>
@@ -51,27 +65,13 @@ const ArticleList = () => {
 
                     {viewedArticles.length > 0 ? (
                         viewedArticles.slice(0, 3).map(article => (
-                            <ViewedArticleCard key={article.id} article={article} />
+                            <RelatedArticleCard key={article.id} article={article} />
                         ))
                     ) : (
                         <p>No viewed articles available.</p>
                     )}
                 </div>
             </div>
-            {articles && articles.length > 0 ?
-            <div className="article-list">
-                <div className="list-header">
-                    <h2>Courses you may like</h2>
-
-                </div>
-                <div className="related-articles">
-                    {articles.map(article => (
-                        <RelatedArticleCard key={article.id} article={article} /> 
-                    ))}
-                </div>
-            </div>
-            : ""}
-
             {jobArticles && jobArticles.length > 0 ?
             <div className="article-list">
                 <div className="list-header">

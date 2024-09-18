@@ -42,6 +42,7 @@ body {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -66,4 +67,16 @@ body {
   font-size: 1rem;
   color: #474747;
   font-weight: 500;
+}
+
+
+@media (max-width: 900px) {
+  .main-content {
+    margin-left: 0; 
+    background-color: #F9FAFC;
+    width: 100%; 
+    min-height: 100vh; 
+   
+  }
+  
 }

@@ -1,6 +1,6 @@
 .related-articles{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); /* Adjust the min size as needed */
     gap: 2rem;
     margin-bottom: 3rem;
 }

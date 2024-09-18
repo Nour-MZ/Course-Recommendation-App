@@ -112,9 +112,8 @@ a.links-container:hover{
 }
 
 
-@media (max-width: 600px) {
-  .sidebar {
-      display: none; /* Change background on smaller screens */
-      padding: 10px; /* Reduce padding on smaller screens */
+  @media (max-width: 900px) {
+    .sidebar {
+        display: none; 
+    }
   }
-}

@@ -170,3 +170,28 @@
   list-style: none;
   color: blue;
 }
+
+@media (max-width: 900px) {
+    .card-image-container{
+        width: 100%;
+    }
+    .card-image-container img{
+        padding: 0;
+    }
+    .card{
+        flex-wrap: wrap;
+    }
+    .card-info-container {
+        
+        padding: 1rem;
+        padding-top: 0;
+        flex-shrink: 1000;
+    }
+    .playbutton{
+ 
+       
+        left: 40%;
+     
+
+}
+  }

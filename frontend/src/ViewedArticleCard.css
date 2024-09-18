@@ -1,6 +1,6 @@
 .viewed-articles-div{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     gap: 2rem;
 }
 .viewed-image-container{
@@ -69,7 +69,7 @@
     width: 4rem;
     position: absolute;
     top: 3rem;
-    left: 7.3rem;
+    left: 41%;
     display: flex;
     align-items: center;
     justify-content: center;
