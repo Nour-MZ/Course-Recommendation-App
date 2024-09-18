@@ -40,7 +40,7 @@ const AllArticles = () => {
             
           ))
         ) : (
-          <p>Loading</p>
+          <p>Load</p>
         )}
       </div>
     </div>
