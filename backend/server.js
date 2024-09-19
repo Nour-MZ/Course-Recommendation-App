@@ -166,7 +166,7 @@ app.post('/api/articles', async (req, res) => {
       const result = await pool.query('SELECT search_history FROM users WHERE email = $1 LIMIT 5', [userId]);
 
       const searchhistory = result.rows[0].search_history
-      if(searchhistory.length>3){
+      if(searchhistory && searchhistory.length>3){
       
       const lastLimitedSearches = searchhistory.slice(-6);
       const resultString = lastLimitedSearches.join(' ');

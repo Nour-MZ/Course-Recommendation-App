@@ -1,20 +1,28 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useUser } from './UserContext';
 import './Sidebar.css'; 
 
 const Sidebar = () => {
   const { language, setLanguage } = useUser();
   const [localLanguage, setLocalLanguage] = useState(language);
-
+  const [activeTab, setActiveTab] = useState(1)
+  const location = useLocation()
+  
   const handleLanguageChange = (lang) => {
-    setLocalLanguage(lang); // Update local state immediately
-    setLanguage(lang);      // Update context state
+    setLocalLanguage(lang); 
+    setLanguage(lang);      
+  };
+
+  const handleTabChange = (tabIndex) => {
+    if (location.pathname !== '/login') {
+      setActiveTab(tabIndex);
+    }
   };
 
   return (
     <nav className="sidebar">
-      <Link to="/" className='icon-div'>
+      <Link to="/" onClick={() => handleTabChange(1)} className='icon-div'>
         <div className='main-icon-div'>
            <img src='/assets/images/logo.png' className='logo-icon' alt="Logo" />
         </div>
@@ -22,15 +30,15 @@ const Sidebar = () => {
       </Link>
       <ul>
         <li>
-          <Link to="/" className='links-container'>
-            <div className='sidebar-icon'>
+          <Link to="/" className='links-container' onClick={() => handleTabChange(1)} style={{ backgroundColor: activeTab === 1 ? '#e7e7f0' : 'transparent' }}>
+          <div className='sidebar-icon'>
               <img src='/assets/images/dashboard.svg' className='sidebar-icon' alt="Dashboard" />
             </div>
             <div className='sidebar-item'>Dashboard</div>
           </Link>
         </li>
         <li>
-          <Link to="/allarticles" className='links-container'>
+          <Link to="/allarticles" onClick={() => handleTabChange(2)} className='links-container' style={{ backgroundColor: activeTab === 2 ? '#e7e7f0' : 'transparent' }}>
             <div className='sidebar-icon'>
               <img src='/assets/images/videos.svg' className='sidebar-icon' alt="Courses" />
             </div>
@@ -38,7 +46,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/history" className='links-container'>
+          <Link to="/history" onClick={() => handleTabChange(3)} className='links-container' style={{ backgroundColor: activeTab === 3 ? '#e7e7f0' : 'transparent' }}>
             <div className='sidebar-icon'>
               <img src='/assets/images/history.svg' className='sidebar-icon' alt="History" />
             </div>

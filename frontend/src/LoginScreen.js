@@ -37,12 +37,20 @@ const LoginScreen = () => {
 
   return (
     <div className="login-screen">
-      <h2>Login</h2>
+      <div className="login-logo-div">
+        <div className="login-logo-container">
+          <div className="login-logo">
+            <img src="/assets/images/logo.png" alt="" srcset="" />
+          </div>
+          <h2 className="logo-title">Elevate <span className="colored-text-login">Academy</span></h2>
+        </div>
+      </div>
     
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="email">Email:</label>
+          
           <input
+            placeholder='Email'
             type="email"
             id="email"
             value={email}
@@ -51,8 +59,9 @@ const LoginScreen = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Password:</label>
+          
           <input
+            placeholder='Password'
             type="password"
             id="password"
             value={password}

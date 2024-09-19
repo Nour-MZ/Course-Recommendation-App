@@ -39,7 +39,11 @@ const AllHistory = () => {
                         <ViewedArticleCard key={article.id} article={article} />
                     ))
                 ) : (
-                    <p>No viewed articles available.</p>
+                  <div className='display-flex'>
+                    <svg height="200" width="200">
+                    <circle id="c3" cx="100" cy="100" r="50" stroke="#3474ef" stroke-width="5" fill="transparent" />
+                    </svg>
+                  </div >
                 )}
             </div>
             {/* <div className="article-list">

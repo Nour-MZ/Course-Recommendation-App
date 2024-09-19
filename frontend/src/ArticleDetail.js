@@ -79,7 +79,11 @@ const fetchtag = async (tags) => {
     return videoId ? `https://www.youtube.com/embed/${videoId}` : null; 
   };
 
-  if (!article) return <p>Loading...</p>;
+  if (!article) return <div className='display-flex'>
+  <svg height="200" width="200">
+  <circle id="c3" cx="100" cy="100" r="50" stroke="#3474ef" stroke-width="5" fill="transparent" />
+  </svg>
+</div >;
 
   return (
     <>   

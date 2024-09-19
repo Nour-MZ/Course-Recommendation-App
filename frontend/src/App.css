@@ -18,6 +18,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F9FAFC;
+
 }
 
 .app-container {
@@ -32,6 +34,14 @@ body {
  
 }
 
+.login-main-content{
+  display: flex;
+  background-color: #F9FAFC;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
 
 .all-articles{
   padding-left: 2rem;
@@ -69,6 +79,26 @@ body {
   font-weight: 500;
 }
 
+.display-flex{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  grid-area: 1/2;
+}
+
+#c3{
+  stroke-dasharray: 80;
+  stroke-dashoffset: 500;
+  animation: loading3 2s linear infinite;
+  -webkit-animation: loading3 2s linear infinite;
+}
+
+
+@keyframes loading3 {
+   to {
+       stroke-dashoffset: 0;
+   }
+}
 
 @media (max-width: 900px) {
   .main-content {

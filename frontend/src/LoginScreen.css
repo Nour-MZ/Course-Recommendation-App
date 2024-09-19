@@ -2,8 +2,67 @@
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   
   }
   
+.login-logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colored-text-login{
+  color: #ECAF59;
+}
+.login-screen form{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-screen .form-group{
+  width: 85%;
+  padding: .7rem;
+}
+.login-screen input{
+  font-size: .7rem;
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: .3rem;
+  transition: all 0.3s ;
+}
+
+.login-screen input::placeholder{
+  font-size: 0.65rem;
+  color: rgb(150, 150, 150);
+}
+.login-screen input:focus{
+  outline: none;
+  border: 1px solid var(--primary);
+  
+}
+
+
+.login-screen button {
+  margin-top: 0.5rem;
+  width: 40%;
+  padding: 0.5rem;
+  background-color: var(--primary);
+  color: white;
+  border: none; 
+  border-radius: 4px;
+  cursor: pointer; 
+  font-size: .8rem; 
+  text-align: center; 
+  outline: none; 
+}
+
+.login-screen button:hover {
+  opacity: 0.9;
+}
+
+.login-screen button:focus {
+  outline: none;
+}
